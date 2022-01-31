@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello
+  labels:
+    env: prod
+    app: motd
+spec:
+  containers:
+  - name: motd
+    image: soleilnoiir/hello:latestp
